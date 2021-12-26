@@ -1,4 +1,4 @@
-using API.Modles;
+using API.Models;
 
 namespace API.Interfaces
 {

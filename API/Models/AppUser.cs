@@ -1,4 +1,4 @@
-namespace API.Modles
+namespace API.Models
 {
     public class AppUser
     {

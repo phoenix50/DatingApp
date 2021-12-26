@@ -2,7 +2,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using API.Data;
-using API.Modles;
+using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using API.DTOs;
 using Microsoft.EntityFrameworkCore;
