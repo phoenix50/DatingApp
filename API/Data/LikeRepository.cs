@@ -16,7 +16,7 @@ namespace API.Data
 
         public LikeRepository(DataContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public async Task<UserLike> GetUserLike(int sourceUserId, int likeUserId)
