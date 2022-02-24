@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   setCurrentUser(){
     //檢查登入cookie
       const user: User = JSON.parse(localStorage.getItem('user')!);
-      this.accountService.setCurrentUser(user);
+      if(user != null)
+        this.accountService.setCurrentUser(user);
   }
 }
