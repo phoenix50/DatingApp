@@ -1,14 +1,5 @@
-﻿using API.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Controllers
-{
-    public class AdminController : BaseApiController
+﻿namespace API.Controllers;
+public class AdminController : BaseApiController
     {
         private readonly UserManager<AppUser> _userManager;
 
@@ -66,4 +57,4 @@ namespace API.Controllers
             return Ok("Admins or moderators can see this");
         }
     }
-}
+

@@ -1,19 +1,5 @@
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using API.Data;
-using API.Models;
-using Microsoft.AspNetCore.Mvc;
-using API.DTOs;
-using Microsoft.EntityFrameworkCore;
-using API.Interfaces;
-using System.Linq;
-using AutoMapper;
-using Microsoft.AspNetCore.Identity;
-
-namespace API.Controllers
-{
-    public class AccountController : BaseApiController
+namespace API.Controllers;
+public class AccountController : BaseApiController
     {
         private readonly ITokenService _tokenService;
         private readonly IMapper _mapper;
@@ -82,4 +68,3 @@ namespace API.Controllers
             return await _userManarger.Users.AnyAsync(x => x.UserName == username.ToLower());
         }
     }
-}

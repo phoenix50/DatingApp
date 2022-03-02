@@ -1,12 +1,4 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using API.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-
-namespace API.Data
-{
+namespace API.Data;
     public class Seed
     {
         public static async Task SeedUsers(UserManager<AppUser> userManager, 
@@ -46,4 +38,3 @@ namespace API.Data
             await userManager.AddToRolesAsync(admin, new[] {"Admin", "Moderator"});
         }
     }
-}

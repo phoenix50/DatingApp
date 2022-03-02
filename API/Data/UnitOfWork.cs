@@ -1,9 +1,4 @@
-﻿using API.Interfaces;
-using AutoMapper;
-using System.Threading.Tasks;
-
-namespace API.Data
-{
+﻿namespace API.Data;
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DataContext _context;
@@ -31,4 +26,4 @@ namespace API.Data
             return _context.ChangeTracker.HasChanges();
         }
     }
-}
+

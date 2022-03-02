@@ -1,18 +1,5 @@
-using API.DTOs;
-using API.Extensions;
-using API.Helpers;
-using API.Interfaces;
-using API.Models;
-using AutoMapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Controllers
-{
-    public class UsersController : BaseApiController
+namespace API.Controllers;
+public class UsersController : BaseApiController
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
@@ -134,4 +121,3 @@ namespace API.Controllers
 
         }
     }
-}

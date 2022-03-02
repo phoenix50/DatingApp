@@ -1,16 +1,5 @@
-
-using API.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using System;
-
-namespace API.Data
-{
-    public class DataContext : IdentityDbContext<AppUser, AppRole, int, 
+namespace API.Data;
+public class DataContext : IdentityDbContext<AppUser, AppRole, int, 
         IdentityUserClaim<int>, AppUserRole, IdentityUserLogin<int>, 
         IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
@@ -66,7 +55,7 @@ namespace API.Data
         }
     }
 
-    public static class UtcDateAnnotation
+public static class UtcDateAnnotation
     {
         private const String IsUtcAnnotation = "IsUtc";
         private static readonly ValueConverter<DateTime, DateTime> UtcConverter =
@@ -108,4 +97,3 @@ namespace API.Data
             }
         }
     }
-}
