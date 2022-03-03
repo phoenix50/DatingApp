@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Self } from '@angular/core';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
-import { BsDatepickerConfig, BsDatepickerModule, DatepickerConfig, DatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 
 @Component({
   selector: 'app-date-input',
